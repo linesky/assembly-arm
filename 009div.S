@@ -142,11 +142,11 @@ _intdivs:
 	mov r2,#0
 	_intdivs2:
 		cmp r0,r1
-		bls _intdivs3
+		blt _intdivs3
 		sub r0,r0,r1
 		add r2,r2,#1
 		cmp r0,r1
-		b _intdivs2
+		bal _intdivs2
 	_intdivs3:
 	mov r1,r0
 	mov r0,r2
