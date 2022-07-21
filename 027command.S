@@ -4,7 +4,7 @@
 @ ld -o my my.o
 @ ./my
 _start:
-		sub lr,lr,lr
+		
 		add r3,sp,#4
 		ldr r4,[r3]
 		push {r4}
