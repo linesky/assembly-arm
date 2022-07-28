@@ -803,8 +803,6 @@ _gotoRs:
 	ldr r0,_gotohead
 	ldr r7,_puts
 	blx r7
-	pop {r6}
-	pop {r5}	
 	pop {r7}
 	pop {r6}
 	pop {r5}
@@ -890,8 +888,6 @@ _colorRs:
 	ldr r0,_gotohead
 	ldr r7,_puts
 	blx r7
-	pop {r6}
-	pop {r5}	
 	pop {r7}
 	pop {r6}
 	pop {r5}
