@@ -1330,9 +1330,9 @@ _randomizes:
 	push {r5}
 	push {r6}
 	push {r7}
-	ldr r1,_randff
-	add r1,r1,#8
-	ldr r0,[r1]
+	mov r7,#20
+	swi 0
+	add r0,r0,#8
 	and r0,r0,#255
 	ldr r1,_starts
 	add r1,r1,r0
