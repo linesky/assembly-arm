@@ -7,6 +7,7 @@ _start:
 	fors:
 		ldr r7,_gettime
 		blx r7
+		mov r3,r2
 		mov r2,r1
 		mov r1,r0
 		ldr r0,_adds
@@ -1575,7 +1576,7 @@ _gettimes:
 		ldr r7,_intdiv
 		blx r7
 		mov r0,r1
-	ldr r1,_ms
+		ldr r1,_ms
 		ldr r7,_intdiv
 		blx r7
 		push {r0}
