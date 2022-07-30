@@ -1324,7 +1324,7 @@ _date2:
 _rand:
 .word _rands
 _randff:
-.word _fileff
+.word _rnds2
 _randomizes:
 	@ r0=string
 	@ r1=string2
@@ -1400,6 +1400,7 @@ _rnds:
 	pop {r1}
 	sub sp,fp,#4
 	pop {fp,pc}
+_fileff:
 .data
 _rands:
 .word 0
@@ -1430,5 +1431,5 @@ _dates1:
 _dates2:
 .SPACE 32
 _data1:
-.SPACE 100000
-_fileff:
+.SPACE 100
+
